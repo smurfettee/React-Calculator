@@ -1,0 +1,97 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(28, 20, 115);
+  height: 100vh;
+}
+
+.calculatorGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  background-color: #3f4e72;
+  gap: 5px 5px;
+  width: 40vw;
+  max-width: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow:5px 5px rgb(27, 25, 25);
+}
+
+.computation {
+  background-color: rgb(189, 34, 34) !important;
+}
+
+.computation:hover {
+  background-color: rgb(166, 23, 23) !important;
+}
+
+.computation:active {
+  background-color: rgb(166, 23, 23) !important;
+}
+
+.calculatorGrid button {
+  background-color: #6b889f;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  height: 10vh;
+  max-height: 50px;
+  box-shadow: 0 2px #bfbebe
+}
+
+.calculatorGrid button:hover {
+  background-color: #5e788d;
+}
+
+.calculatorGrid button:active {
+  background-color: #5e788d;
+  box-shadow: 0 0px;
+  transform: translateY(1px);
+}
+
+.outputScreen {
+  grid-column: 1 / 5;
+}
+
+.clearButton {
+  grid-column: 1 / 5;
+  background-color: rgb(189, 34, 34) !important;
+}
+
+.clearButton:hover {
+  background-color: rgb(166, 23, 23) !important;
+}
+
+.clearButton:active {
+  background-color: rgb(166, 23, 23) !important;
+}
+
+.outputScreen {
+  background-color: #2f416b;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  text-align: right;
+  font-size: 30px;
+}
